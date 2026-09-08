@@ -20,14 +20,14 @@ const clientGroups = [
 
 export function WhoWeHelpSection() {
   return (
-    <section id="about" className="w-full py-20 md:py-32 bg-white">
+    <section id="about" className="w-full py-20 md:py-32 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Who We Help"
           description="We provide compassionate, evidence-based therapy for individuals at every stage of life"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {clientGroups.map((group, idx) => (
             <Card
               key={idx}
