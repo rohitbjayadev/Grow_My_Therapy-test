@@ -7,11 +7,11 @@ interface SectionHeaderProps {
 export function SectionHeader({ title, description, className = '' }: SectionHeaderProps) {
   return (
     <div className={`text-center ${className}`}>
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+      <h2 style={{ fontFamily: "'Cormorant Infant', serif", fontSize: '2.5rem', fontWeight: 700 }} className="text-gray-900 mb-4">
         {title}
       </h2>
       {description && (
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        <p style={{ fontFamily: "'Muli', sans-serif", fontSize: '1rem', lineHeight: 1.8 }} className="text-gray-700 max-w-2xl mx-auto">
           {description}
         </p>
       )}

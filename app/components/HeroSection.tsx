@@ -1,26 +1,26 @@
 export function HeroSection() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <section className="w-full bg-white py-16 md:py-28 lg:py-40">
+      <div className="max-w-[1800px] mx-auto px-[5vw]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Rebuild your foundation on solid ground and finally begin to <em className="font-bold not-italic text-blue-600">thrive</em>
+            <h1 style={{ fontFamily: "'Cormorant Infant', serif", fontSize: '3.5rem', fontWeight: 700, lineHeight: 1.1 }} className="text-gray-900">
+              Rebuild your foundation on solid ground and finally begin to <em className="not-italic" style={{ fontWeight: 700 }}>thrive</em>
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
+            <p style={{ fontFamily: "'Muli', sans-serif", fontSize: '1rem', lineHeight: 1.8 }} className="text-gray-700 max-w-lg">
               Professional counseling services providing compassionate, evidence-based therapy for individuals, couples, families, and children. Both online and in-person sessions available throughout California.
             </p>
-            <button className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-200 shadow-md hover:shadow-lg">
+            <button style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.95rem' }} className="inline-block bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-3 transition duration-200">
               Book an Appointment
             </button>
           </div>
 
-          <div className="h-96 md:h-[450px] bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl overflow-hidden shadow-lg flex items-center justify-center border border-blue-200">
+          <div className="h-96 md:h-[500px] bg-gray-100 overflow-hidden flex items-center justify-center">
             <div className="text-center space-y-2">
-              <svg className="w-16 h-16 mx-auto text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              <svg className="w-20 h-20 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              <span className="text-gray-400">Family & Therapy Imagery</span>
+              <span style={{ fontFamily: "'Muli', sans-serif" }} className="text-gray-500">Family & Therapy Imagery</span>
             </div>
           </div>
         </div>

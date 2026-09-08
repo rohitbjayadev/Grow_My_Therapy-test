@@ -11,14 +11,16 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-white w-full">
       <Header />
-      <HeroSection />
-      <WhoWeHelpSection />
-      <SpecialtiesSection />
-      <MethodsSection />
-      <TeamSection />
-      <CTASection />
+      <main className="flex-1">
+        <HeroSection />
+        <WhoWeHelpSection />
+        <SpecialtiesSection />
+        <MethodsSection />
+        <TeamSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );
