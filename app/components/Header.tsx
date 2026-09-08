@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { navLinks, companyInfo } from '@/app/lib/constants';
 
 export function Header() {
@@ -7,8 +8,14 @@ export function Header() {
       <div className="max-w-[1800px] mx-auto px-[5vw]">
         <div className="flex justify-between items-center" style={{ height: '75px', paddingTop: '1.4vw', paddingBottom: '1.4vw' }}>
           <div className="flex-shrink-0" style={{ height: '75px', display: 'flex', alignItems: 'center' }}>
-            <Link href="/" className="text-gray-900" style={{ fontFamily: "'Cormorant Infant', serif", fontSize: '1.75rem', fontWeight: 700 }}>
-              {companyInfo.name}
+            <Link href="/">
+              <Image
+                src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png?format=1500w"
+                alt="Conejo Valley Family Counseling"
+                width={150}
+                height={75}
+                style={{ height: 'auto' }}
+              />
             </Link>
           </div>
 

@@ -15,13 +15,12 @@ export function HeroSection() {
             </button>
           </div>
 
-          <div className="h-96 md:h-[500px] bg-gray-100 overflow-hidden flex items-center justify-center">
-            <div className="text-center space-y-2">
-              <svg className="w-20 h-20 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <span style={{ fontFamily: "'Muli', sans-serif" }} className="text-gray-500">Family & Therapy Imagery</span>
-            </div>
+          <div className="h-96 md:h-[500px] bg-gray-100 overflow-hidden">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
+              alt="Family and therapy"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
