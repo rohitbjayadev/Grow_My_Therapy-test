@@ -1,13 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Muli:wght@300;400&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'PrintedMoments';
+  src: url('https://static1.squarespace.com/static/670423e106da6c036366fd10/t/67042f1ac94bbb494649b8e4/1728327450432/printedmoments-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-heading: 'Cormorant Infant', serif;
   --font-body: 'Muli', sans-serif;
   --background: #ffffff;
   --foreground: #1f2937;
-  --text-primary: #333333;
-  --text-secondary: #666666;
+  --text-primary: #2b2b2b;
+  --text-secondary: #2b2b2b;
+
+  --color-white: #ffffff;
+  --color-black: #2b2b2b;
+  --color-accent: #e3d9ca;
+  --color-light-accent: #f6f4ee;
+  --color-dark-accent: #86b3b3;
+}
+
+.accent-script {
+  font-family: 'PrintedMoments', cursive;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--color-dark-accent);
+  line-height: 0.7;
+  display: inline-block;
+}
+
+.eyebrow-text {
+  font-family: 'Muli', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  position: relative;
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  color: var(--color-black);
+  padding-bottom: 2px;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid #515151;
+  transition: right 1s;
+}
+.btn-primary:hover::before {
+  right: 100%;
+}
+
+.btn-secondary {
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+  padding: 0.6em 1.75em;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-secondary:hover {
+  background-color: var(--color-black);
+  color: #fff;
 }
 
 @theme inline {

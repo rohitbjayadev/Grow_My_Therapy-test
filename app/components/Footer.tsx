@@ -1,30 +1,37 @@
 import Link from 'next/link';
-import { contactInfo, companyInfo } from '@/app/lib/constants';
+import Image from 'next/image';
+import {
+  companyInfo,
+  contactInfo,
+  footerNavLinks,
+  footerTeamLinks,
+  footerLegalLinks,
+  gettingStartedContent,
+} from '@/app/lib/constants';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-gray-900 text-gray-400 py-16 md:py-20">
-      <div className="max-w-[1800px] mx-auto px-[5vw]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          <div className="space-y-4">
-            <h3 style={{ fontFamily: "'Cormorant Infant', serif", fontSize: '1.25rem', fontWeight: 700 }} className="text-white">
-              {companyInfo.name}
-            </h3>
-            <p style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.9rem', lineHeight: 1.6 }} className="text-gray-400">
-              {companyInfo.description}
-            </p>
-          </div>
+    <footer className="bg-white">
+      <div className="max-w-[1500px] mx-auto px-[6vw] md:px-[4vw] py-12 md:py-16">
+        <div className="grid grid-cols-8 grid-rows-[repeat(30,auto)] gap-x-[11px] gap-y-4 md:grid-cols-24 md:grid-rows-[repeat(9,auto)] md:gap-x-5 md:gap-y-4">
+          <Image
+            src={companyInfo.logo}
+            alt={companyInfo.name}
+            width={220}
+            height={110}
+            className="[grid-area:2/1/5/9] md:[grid-area:1/1/5/8] h-auto w-[160px] self-start"
+          />
 
-          <div className="space-y-4">
-            <h3 style={{ fontFamily: "'Cormorant Infant', serif", fontSize: '1.1rem', fontWeight: 700 }} className="text-white">
-              Quick Links
-            </h3>
+          <p className="[grid-area:5/1/10/9] md:[grid-area:4/1/9/9] text-[var(--color-black)] leading-relaxed self-start">
+            {gettingStartedContent.paragraph}
+          </p>
+
+          <div className="[grid-area:10/2/15/8] md:[grid-area:1/11/6/15] space-y-3">
+            <h3 className="text-xl font-bold text-[var(--color-black)] italic">Navigate</h3>
             <ul className="space-y-2">
-              {[{ label: 'Home', href: '#' }, { label: 'About', href: '#about' }, { label: 'FAQs', href: '#team' }, { label: 'Contact', href: '#' }].map((link) => (
+              {footerNavLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.9rem' }} className="text-gray-400 hover:text-white transition">
+                  <Link href={link.href} className="text-[var(--color-black)] hover:opacity-70 transition">
                     {link.label}
                   </Link>
                 </li>
@@ -32,69 +39,58 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-4">
-            <h3 style={{ fontFamily: "'Cormorant Infant', serif", fontSize: '1.1rem', fontWeight: 700 }} className="text-white">
-              Services
-            </h3>
+          <div className="[grid-area:23/2/30/8] md:[grid-area:1/15/10/20] space-y-3">
+            <h3 className="text-xl font-bold text-[var(--color-black)] italic">Our Team</h3>
             <ul className="space-y-2">
-              {[
-                { label: 'Individual Therapy', href: '#' },
-                { label: 'Couples Therapy', href: '#' },
-                { label: 'Family Therapy', href: '#' },
-                { label: 'Children & Teens', href: '#' },
-              ].map((service) => (
-                <li key={service.href}>
-                  <Link href={service.href} style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.9rem' }} className="text-gray-400 hover:text-white transition">
-                    {service.label}
+              {footerTeamLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-[var(--color-black)] hover:opacity-70 transition">
+                    {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="space-y-3">
-            <h3 style={{ fontFamily: "'Cormorant Infant', serif", fontSize: '1.1rem', fontWeight: 700 }} className="text-white">
-              Contact Info
-            </h3>
-            <div style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.9rem' }} className="space-y-3">
-              <div>
-                <p className="text-gray-600 text-xs uppercase tracking-wide mb-1">Address</p>
-                <p className="text-gray-400">{contactInfo.address}</p>
-              </div>
-              <div>
-                <p className="text-gray-600 text-xs uppercase tracking-wide mb-1">Service Areas</p>
-                <p className="text-gray-400 text-xs">{contactInfo.serviceAreas}</p>
-              </div>
-              <div>
-                <p className="text-gray-600 text-xs uppercase tracking-wide mb-1">Phone</p>
-                <Link href={`tel:${contactInfo.phone}`} className="text-gray-400 hover:text-white transition">
-                  {contactInfo.phone}
-                </Link>
-              </div>
-              <div>
-                <p className="text-gray-600 text-xs uppercase tracking-wide mb-1">Email</p>
-                <Link href={`mailto:${contactInfo.email}`} className="text-gray-400 hover:text-white transition">
+          <div className="[grid-area:15/2/23/8] md:[grid-area:1/20/10/25] space-y-3">
+            <h3 className="text-xl font-bold text-[var(--color-black)] italic">Contact</h3>
+            <div className="space-y-1 text-[var(--color-black)]">
+              <p>{contactInfo.addressLine1}</p>
+              <p>{contactInfo.addressLine2}</p>
+              <p>{contactInfo.addressLine3}</p>
+              <p>
+                <a href={`mailto:${contactInfo.email}`} className="hover:opacity-70 transition">
                   {contactInfo.email}
-                </Link>
-              </div>
+                </a>
+              </p>
+              <p>
+                <a href={contactInfo.phoneHref} className="hover:opacity-70 transition">
+                  {contactInfo.phone}
+                </a>
+              </p>
+              <p className="italic pt-2">{contactInfo.serviceAreas}</p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600" style={{ fontFamily: "'Muli', sans-serif" }}>
-            <p>&copy; {currentYear} {companyInfo.name}. All rights reserved.</p>
-            <div className="flex gap-8 mt-4 md:mt-0">
-              <Link href="#" className="text-gray-600 hover:text-gray-400 transition">
-                Terms
-              </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-400 transition">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-400 transition">
-                Disclaimer
-              </Link>
-            </div>
+      <div style={{ backgroundColor: 'var(--color-dark-accent)' }}>
+        <div className="max-w-[1500px] mx-auto px-[6vw] md:px-[4vw] py-4">
+          <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1 text-center text-xs text-white">
+            {footerLegalLinks.map((link) => (
+              <span key={link.href} className="flex items-center gap-2">
+                <Link href={link.href} className="hover:opacity-70 transition">
+                  {link.label}
+                </Link>
+                <span aria-hidden="true">|</span>
+              </span>
+            ))}
+            <span>
+              Website by{' '}
+              <a href="https://walkerstrategyco.com" target="_blank" rel="noreferrer" className="hover:opacity-70 transition">
+                Walker Strategy Co.
+              </a>
+            </span>
           </div>
         </div>
       </div>

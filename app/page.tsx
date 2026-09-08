@@ -2,11 +2,14 @@
 
 import { Header, HeroSection, Footer } from '@/app/components/index';
 import {
+  HoldingHopeSection,
   WhoWeHelpSection,
+  WorthyPlaceSection,
+  ExpertiseAreasSection,
+  MakingDifferenceSection,
+  HonoringSection,
   SpecialtiesSection,
-  MethodsSection,
   TeamSection,
-  CTASection,
 } from '@/app/components/sections';
 
 export default function Home() {
@@ -15,11 +18,14 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <HoldingHopeSection />
         <WhoWeHelpSection />
+        <WorthyPlaceSection />
+        <ExpertiseAreasSection />
+        <MakingDifferenceSection />
+        <HonoringSection />
         <SpecialtiesSection />
-        <MethodsSection />
         <TeamSection />
-        <CTASection />
       </main>
       <Footer />
     </div>

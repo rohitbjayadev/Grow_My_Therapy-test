@@ -10,8 +10,8 @@ export function Header() {
           <div className="flex-shrink-0" style={{ height: '75px', display: 'flex', alignItems: 'center' }}>
             <Link href="/">
               <Image
-                src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png?format=1500w"
-                alt="Conejo Valley Family Counseling"
+                src={companyInfo.logo}
+                alt={companyInfo.name}
                 width={150}
                 height={75}
                 style={{ height: 'auto' }}
@@ -20,26 +20,52 @@ export function Header() {
           </div>
 
           <div className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-gray-700 hover:text-gray-900 transition"
-                style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.95rem' }}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.children ? (
+                <div key={link.href} className="relative group">
+                  <button
+                    className="relative text-[var(--color-black)] transition flex items-center gap-1 py-1 after:content-[''] after:block after:h-px after:bg-[var(--color-black)] after:w-0 after:mx-auto after:transition-[width] after:duration-500 group-hover:after:w-full"
+                    style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.95rem' }}
+                  >
+                    {link.label}
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="absolute left-0 top-full hidden group-hover:block bg-white border border-gray-200 shadow-lg min-w-[220px] py-0 z-50">
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block px-4 py-3 text-[var(--color-black)] hover:border-b hover:border-[var(--color-black)] transition"
+                        style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.9rem' }}
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="relative text-[var(--color-black)] transition py-1 after:content-[''] after:block after:h-px after:bg-[var(--color-black)] after:w-0 after:mx-auto after:transition-[width] after:duration-500 hover:after:w-full"
+                  style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.95rem' }}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
 
           <div className="hidden md:block">
-            <button className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 transition" style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.95rem' }}>
-              Book Now
-            </button>
+            <Link href="/contact" className="btn-secondary text-sm">
+              Contact
+            </Link>
           </div>
 
           <div className="md:hidden">
-            <button className="text-gray-700 hover:text-gray-900 transition p-2">
+            <button className="text-[var(--color-black)] transition p-2">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
