@@ -5,10 +5,10 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-8">
             <h1 style={{ fontFamily: "'Cormorant Infant', serif", fontSize: '3.5rem', fontWeight: 700, lineHeight: 1.1 }} className="text-gray-900">
-              Rebuild your foundation on solid ground and finally begin to <em className="not-italic" style={{ fontWeight: 700 }}>thrive</em>
+              Rebuild your foundation on solid ground and finally begin to <strong><em style={{ color: '#1a3a52', fontStyle: 'italic' }}>thrive</em></strong>.
             </h1>
             <p style={{ fontFamily: "'Muli', sans-serif", fontSize: '1rem', lineHeight: 1.8 }} className="text-gray-700 max-w-lg">
-              Professional counseling services providing compassionate, evidence-based therapy for individuals, couples, families, and children. Both online and in-person sessions available throughout California.
+              Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
             </p>
             <button style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.95rem' }} className="inline-block bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-3 transition duration-200">
               Book an Appointment
