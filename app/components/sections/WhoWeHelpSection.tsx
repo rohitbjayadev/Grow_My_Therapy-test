@@ -1,5 +1,23 @@
 import { Card, SectionHeader } from '@/app/components/index';
 
+const clientGroups = [
+  {
+    title: 'Adults',
+    description: 'Navigate personal challenges, anxiety, depression, relationships, and life transitions. We help you build resilience and find meaning in your life.',
+    href: '#adults',
+  },
+  {
+    title: 'Couples',
+    description: 'Strengthen your relationship through improved communication, conflict resolution, deeper intimacy, and emotional connection. Therapy for marriage and partnerships.',
+    href: '#couples',
+  },
+  {
+    title: 'Children & Teens',
+    description: 'Support healthy development, build coping skills, and address behavioral, emotional, and academic challenges in a safe, nurturing environment.',
+    href: '#children',
+  },
+];
+
 export function WhoWeHelpSection() {
   return (
     <section id="about" className="w-full py-20 md:py-32 bg-white">
@@ -10,27 +28,16 @@ export function WhoWeHelpSection() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card
-            title="Adults"
-            description="Navigate personal challenges, work-life balance, anxiety, depression, and life transitions with professional support."
-            href="#adults"
-            withLink
-            variant="light"
-          />
-          <Card
-            title="Couples"
-            description="Strengthen your relationship through improved communication, conflict resolution, and deeper emotional connection."
-            href="#couples"
-            withLink
-            variant="light"
-          />
-          <Card
-            title="Children & Teens"
-            description="Support healthy development, build coping skills, and address behavioral or emotional challenges in a safe space."
-            href="#children"
-            withLink
-            variant="light"
-          />
+          {clientGroups.map((group, idx) => (
+            <Card
+              key={idx}
+              title={group.title}
+              description={group.description}
+              href={group.href}
+              withLink
+              variant="light"
+            />
+          ))}
         </div>
       </div>
     </section>

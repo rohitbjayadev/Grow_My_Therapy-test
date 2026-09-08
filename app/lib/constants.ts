@@ -76,7 +76,6 @@ export const borderRadius = {
   xl: '1rem',
 };
 
-// Navigation Links
 export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Our Team', href: '#team' },
@@ -84,17 +83,43 @@ export const navLinks = [
   { label: 'Methods', href: '#methods' },
 ];
 
-// Contact Information
 export const contactInfo = {
-  address: '925 Broadbeck Dr, Newbury Park, CA 91320',
-  phone: '(805) 555-0123',
-  email: 'hello@example.com',
+  address: '925 Broadbeck Dr, Suites 200 & 225, Newbury Park, CA 91320',
+  phone: '805.242.3120',
+  email: 'info@conejovalleycounseling.com',
+  serviceAreas: 'Thousand Oaks, Westlake Village, Camarillo, Moorpark, Simi Valley',
 };
 
-// Company Information
 export const companyInfo = {
-  name: 'Conejo Valley Counseling',
-  tagline: 'Professional mental health services',
+  name: 'Conejo Valley Family Counseling',
+  tagline: 'Rebuild your foundation on solid ground',
   description:
     'Professional mental health services providing compassionate care to families and individuals.',
 };
+
+export const teamMembers = [
+  { name: 'Jennifer Anderson', title: 'LMFT', specialty: 'Trauma & EMDR' },
+  { name: 'Candace Bletscher', title: 'AMFT', specialty: 'Family Therapy' },
+  { name: 'Heather Williams-Baumgart', title: 'AMFT', specialty: 'Couples Counseling' },
+  { name: 'Michaela Gorospe', title: 'AMFT', specialty: 'Anxiety & Depression' },
+  { name: 'Samantha Johnson', title: 'AMFT', specialty: 'Trauma & PTSD' },
+  { name: 'Autumn Bodily', title: 'AMFT', specialty: 'Child & Teen Therapy' },
+  { name: 'Andrea Watkins', title: 'APCC', specialty: 'Individual Therapy' },
+  { name: 'Rosa Gomez', title: 'AMFT', specialty: 'Family Systems' },
+  { name: 'Chad Flores', title: 'AMFT', specialty: 'Couples & Intimacy' },
+];
+
+export const specialties = [
+  { title: 'Trauma', desc: 'Specialized trauma-informed care' },
+  { title: 'Dissociation', desc: 'Treatment for dissociative disorders' },
+  { title: 'EMDR Therapy', desc: 'Eye Movement Desensitization & Reprocessing' },
+  { title: 'Brainspotting', desc: 'Advanced trauma processing technique' },
+  { title: 'Somatic Therapy', desc: 'Body-based healing approaches' },
+  { title: 'Parts Work Therapy', desc: 'Internal Family Systems approaches' },
+  { title: 'Family Conflict', desc: 'Resolve family relationship issues' },
+  { title: 'Couples Therapy', desc: 'Strengthen marriages and partnerships' },
+  { title: 'Special Needs Parenting', desc: 'Support for complex parenting' },
+  { title: 'Anxiety', desc: 'Evidence-based anxiety treatment' },
+  { title: 'Depression', desc: 'Comprehensive depression therapy' },
+  { title: 'Intimacy & Connection', desc: 'Deepen emotional and physical connection' },
+];

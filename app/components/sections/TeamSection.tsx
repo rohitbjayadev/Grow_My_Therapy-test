@@ -1,13 +1,5 @@
 import { TeamCard, SectionHeader } from '@/app/components/index';
-
-const teamMembers = [
-  { name: 'Dr. Smith', title: 'LMFT, Director', specialty: 'Trauma & EMDR' },
-  { name: 'Jane Doe', title: 'LMFT', specialty: 'Family Therapy' },
-  { name: 'John Johnson', title: 'AMFT', specialty: 'Couples Counseling' },
-  { name: 'Sarah Williams', title: 'APCC', specialty: 'Child Therapy' },
-  { name: 'Michael Brown', title: 'LMFT', specialty: 'Addiction & Recovery' },
-  { name: 'Emily Davis', title: 'APCC', specialty: 'Anxiety & Depression' },
-];
+import { teamMembers } from '@/app/lib/constants';
 
 export function TeamSection() {
   return (

@@ -1,13 +1,5 @@
 import { SpecialtyCard, SectionHeader } from '@/app/components/index';
-
-const specialties = [
-  { title: 'Trauma & PTSD', desc: 'Specialized trauma-informed care' },
-  { title: 'EMDR Therapy', desc: 'Eye Movement Desensitization & Reprocessing' },
-  { title: 'Dissociation', desc: 'Treatment for dissociative disorders' },
-  { title: 'Family Therapy', desc: 'Strengthen family relationships' },
-  { title: 'Couples Counseling', desc: 'Build healthy partnerships' },
-  { title: 'Special Needs Parenting', desc: 'Support for complex parenting' },
-];
+import { specialties } from '@/app/lib/constants';
 
 export function SpecialtiesSection() {
   return (

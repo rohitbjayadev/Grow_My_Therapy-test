@@ -1,37 +1,28 @@
 import Link from 'next/link';
+import { navLinks, companyInfo } from '@/app/lib/constants';
 
 export function Header() {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="font-bold text-2xl text-blue-900">
-              CVC
+            <Link href="/" className="font-bold text-xl text-blue-900">
+              {companyInfo.name}
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="#about" className="text-gray-700 hover:text-blue-900 transition">
-              About
-            </Link>
-            <Link href="#team" className="text-gray-700 hover:text-blue-900 transition">
-              Our Team
-            </Link>
-            <Link href="#specialties" className="text-gray-700 hover:text-blue-900 transition">
-              Specialties
-            </Link>
-            <Link href="#methods" className="text-gray-700 hover:text-blue-900 transition">
-              Methods
-            </Link>
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="text-gray-700 hover:text-blue-900 transition">
+                {link.label}
+              </Link>
+            ))}
             <button className="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
               Book an Appointment
             </button>
           </div>
 
-          {/* Mobile Menu Icon */}
           <div className="md:hidden">
             <button className="text-gray-700 hover:text-blue-900 transition">
               <svg
