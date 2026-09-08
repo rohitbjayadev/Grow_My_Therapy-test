@@ -110,16 +110,12 @@ export const teamMembers = [
 ];
 
 export const specialties = [
-  { title: 'Trauma', desc: 'Specialized trauma-informed care' },
-  { title: 'Dissociation', desc: 'Treatment for dissociative disorders' },
-  { title: 'EMDR Therapy', desc: 'Eye Movement Desensitization & Reprocessing' },
-  { title: 'Brainspotting', desc: 'Advanced trauma processing technique' },
-  { title: 'Somatic Therapy', desc: 'Body-based healing approaches' },
-  { title: 'Parts Work Therapy', desc: 'Internal Family Systems approaches' },
-  { title: 'Family Conflict', desc: 'Resolve family relationship issues' },
-  { title: 'Couples Therapy', desc: 'Strengthen marriages and partnerships' },
-  { title: 'Special Needs Parenting', desc: 'Support for complex parenting' },
-  { title: 'Anxiety', desc: 'Evidence-based anxiety treatment' },
-  { title: 'Depression', desc: 'Comprehensive depression therapy' },
-  { title: 'Intimacy & Connection', desc: 'Deepen emotional and physical connection' },
+  { title: 'Trauma', desc: 'We don\'t always know when and how we\'ve experienced trauma. In therapy, we\'ll work together to help you process your past, understand what\'s causing you to stay "stuck," and regain a sense of safety, control, and hope. You don\'t have to carry your burdens alone.' },
+  { title: 'Dissociation', desc: 'The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we\'ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.' },
+  { title: 'EMDR', desc: 'Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.' },
+  { title: 'Special Needs Parenting', desc: 'Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.' },
+  { title: 'Brainspotting', desc: 'Advanced trauma processing technique that accesses the brain\'s natural healing mechanisms.' },
+  { title: 'Somatic Therapy', desc: 'Body-based healing approaches that recognize the connection between mind and body.' },
+  { title: 'Parts Work Therapy', desc: 'Internal Family Systems approaches to help you understand different parts of yourself.' },
+  { title: 'Couples Therapy', desc: 'Relationships require effort, and we\'re here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.' },
 ];
