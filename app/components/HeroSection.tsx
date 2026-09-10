@@ -11,6 +11,7 @@ export function HeroSection() {
               src="/dr-reynolds-portrait.png"
               alt="Dr. Maya Reynolds, PsyD"
               fill
+              sizes="(max-width: 768px) 75vw, 35vw"
               className="object-cover object-top"
               priority
             />

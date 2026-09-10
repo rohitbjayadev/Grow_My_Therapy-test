@@ -22,7 +22,7 @@ export function HoldingHopeSection() {
           </div>
 
           <div className="relative [grid-area:14/1/21/9] md:[grid-area:1/18/17/26] md:-mr-[4vw] h-72 md:h-auto overflow-hidden rounded-lg md:rounded-none">
-            <Image src="/patient.png" alt="A client reflecting quietly in a therapy session" fill className="object-cover" />
+            <Image src="/patient.png" alt="A client reflecting quietly in a therapy session" fill sizes="(max-width: 768px) 90vw, 35vw" className="object-cover" />
           </div>
         </div>
       </div>

@@ -32,10 +32,10 @@ export function OurOfficeSection() {
 
           <div className="grid grid-cols-2 gap-4 order-1 md:order-2">
             <div className="relative h-56 md:h-96 rounded-lg overflow-hidden mt-8 md:mt-12">
-              <Image src="/office1.jpeg" alt="Dr. Reynolds' therapy office in Santa Monica" fill className="object-cover" />
+              <Image src="/office1.jpeg" alt="Dr. Reynolds' therapy office in Santa Monica" fill sizes="(max-width: 768px) 45vw, 25vw" className="object-cover" />
             </div>
             <div className="relative h-56 md:h-96 rounded-lg overflow-hidden">
-              <Image src="/office2.jpeg" alt="Seating area in Dr. Reynolds' therapy office" fill className="object-cover" />
+              <Image src="/office2.jpeg" alt="Seating area in Dr. Reynolds' therapy office" fill sizes="(max-width: 768px) 45vw, 25vw" className="object-cover" />
             </div>
           </div>
         </div>

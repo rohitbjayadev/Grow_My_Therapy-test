@@ -39,7 +39,7 @@ export function Footer() {
             <h3 className="text-xl font-bold text-[var(--color-black)] italic">Specialties</h3>
             <ul className="space-y-2">
               {footerSpecialtyLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <a href={link.href} className="text-[var(--color-black)] hover:opacity-70 transition">
                     {link.label}
                   </a>

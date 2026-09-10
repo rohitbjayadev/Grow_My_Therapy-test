@@ -19,6 +19,7 @@ export function MakingDifferenceSection() {
               src="/dr_consulting.png"
               alt="Dr. Maya Reynolds in a therapy session"
               fill
+              sizes="(max-width: 768px) 90vw, 25vw"
               className="object-cover"
             />
           </div>

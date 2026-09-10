@@ -41,7 +41,7 @@ export function WhoWeHelpSection() {
           {clientGroups.map((group, idx) =>
             group.image ? (
               <div key={group.title} className={`relative ${areas[idx].imgArea} h-56 md:h-72 overflow-hidden rounded-lg`}>
-                <Image src={group.image} alt={group.title} fill className="object-cover" />
+                <Image src={group.image} alt={group.title} fill sizes="(max-width: 768px) 90vw, 30vw" className="object-cover" />
               </div>
             ) : (
               <ImagePlaceholder key={group.title} className={`${areas[idx].imgArea} h-56 md:h-72 rounded-lg`} />

@@ -5,7 +5,7 @@ export function TeamSection() {
   return (
     <section id="contact" className="relative w-full overflow-hidden">
       <div className="absolute inset-0">
-        <Image src="/beach-view.png" alt="Woman sitting on the beach at sunset in Santa Monica" fill className="object-cover" />
+        <Image src="/beach-view.png" alt="Woman sitting on the beach at sunset in Santa Monica" fill sizes="100vw" className="object-cover" />
         <div
           className="absolute inset-0"
           style={{

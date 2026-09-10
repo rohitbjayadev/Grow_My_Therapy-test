@@ -8,6 +8,7 @@ export function WorthyPlaceSection() {
         src="/background.png"
         alt=""
         fill
+        sizes="100vw"
         className="object-cover"
         priority={false}
       />
