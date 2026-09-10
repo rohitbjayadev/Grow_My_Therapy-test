@@ -9,6 +9,7 @@ import {
   MakingDifferenceSection,
   HonoringSection,
   SpecialtiesSection,
+  OurOfficeSection,
   TeamSection,
 } from '@/app/components/sections';
 
@@ -25,6 +26,7 @@ export default function Home() {
         <MakingDifferenceSection />
         <HonoringSection />
         <SpecialtiesSection />
+        <OurOfficeSection />
         <TeamSection />
       </main>
       <Footer />

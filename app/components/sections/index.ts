@@ -5,4 +5,5 @@ export { ExpertiseAreasSection } from './ExpertiseAreasSection';
 export { MakingDifferenceSection } from './MakingDifferenceSection';
 export { HonoringSection } from './HonoringSection';
 export { SpecialtiesSection } from './SpecialtiesSection';
+export { OurOfficeSection } from './OurOfficeSection';
 export { TeamSection } from './TeamSection';

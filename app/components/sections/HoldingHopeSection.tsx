@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { holdingHopeContent, conejoPurposeContent } from '@/app/lib/constants';
 
 export function HoldingHopeSection() {
@@ -20,12 +21,8 @@ export function HoldingHopeSection() {
             {conejoPurposeContent.furtherDescription}
           </div>
 
-          <div className="[grid-area:14/1/21/9] md:[grid-area:1/18/17/26] md:-mr-[4vw] h-72 md:h-auto overflow-hidden rounded-lg md:rounded-none">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7a40691c-70a5-4307-b9ae-974592087a8f/Jennifer+A+-+Images+%283%29.jpg"
-              alt="Sandy beach with gentle ocean waves and a cloudy sky."
-              className="w-full h-full object-cover"
-            />
+          <div className="relative [grid-area:14/1/21/9] md:[grid-area:1/18/17/26] md:-mr-[4vw] h-72 md:h-auto overflow-hidden rounded-lg md:rounded-none">
+            <Image src="/patient.png" alt="A client reflecting quietly in a therapy session" fill className="object-cover" />
           </div>
         </div>
       </div>
