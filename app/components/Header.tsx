@@ -17,21 +17,21 @@ export function Header() {
 
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className="relative text-[var(--color-black)] transition py-1 after:content-[''] after:block after:h-px after:bg-[var(--color-black)] after:w-0 after:mx-auto after:transition-[width] after:duration-500 hover:after:w-full"
                 style={{ fontFamily: "'Muli', sans-serif", fontSize: '0.95rem' }}
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </div>
 
           <div className="hidden md:block">
-            <Link href="#contact" className="btn-secondary text-sm">
+            <a href="#contact" className="btn-secondary text-sm">
               Contact
-            </Link>
+            </a>
           </div>
 
           <div className="md:hidden">

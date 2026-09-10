@@ -16,16 +16,6 @@ export function HeroSection() {
             />
           </div>
 
-          <div className="relative [grid-area:15/7/24/10] md:[grid-area:2/24/17/26] md:-mr-[4vw] h-64 md:h-full">
-            <Image
-              src="/signature2.png"
-              alt="Dr. Maya Reynolds, PsyD — Licensed Clinical Psychologist"
-              fill
-              className="object-contain"
-            />
-          </div>
-
-
           <p className="[grid-area:2/1/5/9] md:[grid-area:2/11/4/19] md:-ml-[57px] eyebrow-text text-center md:text-left text-[var(--color-black)]">
             {heroSectionContent.eyebrow}
           </p>

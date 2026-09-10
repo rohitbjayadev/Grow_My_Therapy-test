@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import {
   companyInfo,
   contactInfo,
@@ -28,9 +27,9 @@ export function Footer() {
             <ul className="space-y-2">
               {footerNavLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[var(--color-black)] hover:opacity-70 transition">
+                  <a href={link.href} className="text-[var(--color-black)] hover:opacity-70 transition">
                     {link.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -41,9 +40,9 @@ export function Footer() {
             <ul className="space-y-2">
               {footerSpecialtyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[var(--color-black)] hover:opacity-70 transition">
+                  <a href={link.href} className="text-[var(--color-black)] hover:opacity-70 transition">
                     {link.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

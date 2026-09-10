@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import { whoWeHelpContent } from '@/app/lib/constants';
 import { ImagePlaceholder } from '@/app/components/ImagePlaceholder';
@@ -27,7 +26,7 @@ export function WhoWeHelpSection() {
       title: whoWeHelpContent.childrenTeens.title,
       href: whoWeHelpContent.childrenTeens.href,
       description: whoWeHelpContent.childrenTeens.description,
-      image: '/entrepreneurs-creatives.png',
+      image: '/entreprenour.png',
     },
   ];
 
@@ -52,9 +51,9 @@ export function WhoWeHelpSection() {
             <div key={group.title + '-text'} className={`${areas[idx].textArea} space-y-2`}>
               <h4 className="text-xl md:text-2xl font-semibold text-[var(--color-black)]">
                 {group.href ? (
-                  <Link href={group.href} className="hover:opacity-70 transition">
+                  <a href={group.href} className="hover:opacity-70 transition">
                     {group.title}
-                  </Link>
+                  </a>
                 ) : (
                   group.title
                 )}

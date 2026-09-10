@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { expertiseTags } from '@/app/lib/constants';
 import type { CSSProperties } from 'react';
 
@@ -23,23 +22,29 @@ export function ExpertiseAreasSection() {
               '--d-c1': col === 0 ? 9 : 17,
               '--d-c2': col === 0 ? 17 : 25,
             } as CSSProperties;
-            const content = (
-              <span className="text-lg font-bold italic" style={{ color: 'var(--color-black)' }}>
-                {tag.label}
-              </span>
-            );
+            const isAndMore = tag.label === 'and more..';
+            const wordClassName = `inline-block text-xl italic pb-1 transition hover:opacity-70 ${
+              isAndMore ? '' : 'border-b'
+            }`;
+            const wordStyle = {
+              fontFamily: "'Cormorant Infant', serif",
+              color: 'var(--color-black)',
+              borderColor: 'var(--color-stone)',
+            };
             return (
               <div
                 key={tag.label}
                 style={style}
-                className="[grid-row:var(--m-r1)/var(--m-r2)] [grid-column:1/9] md:[grid-row:var(--d-r1)/var(--d-r2)] md:[grid-column:var(--d-c1)/var(--d-c2)] border-b pb-2 flex items-end"
+                className="[grid-row:var(--m-r1)/var(--m-r2)] [grid-column:1/9] md:[grid-row:var(--d-r1)/var(--d-r2)] md:[grid-column:var(--d-c1)/var(--d-c2)] flex items-end pb-2"
               >
                 {tag.href ? (
-                  <Link href={tag.href} className="hover:opacity-70 transition">
-                    {content}
-                  </Link>
+                  <a href={tag.href} className={wordClassName} style={wordStyle}>
+                    {tag.label}
+                  </a>
                 ) : (
-                  content
+                  <span className={wordClassName} style={wordStyle}>
+                    {tag.label}
+                  </span>
                 )}
               </div>
             );
