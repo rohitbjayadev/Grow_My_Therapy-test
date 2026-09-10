@@ -1,4 +1,3 @@
-// Typography
 export const typography = {
   fontFamily: {
     heading: "'Cormorant Infant', serif",
@@ -7,200 +6,163 @@ export const typography = {
 };
 
 export const companyInfo = {
-  name: 'Conejo Valley Family Counseling',
-  logo: 'https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png?format=1500w',
+  name: 'Dr. Maya Reynolds, PsyD',
+  title: 'Licensed Clinical Psychologist (Fictional Therapist)',
 };
 
-// Header navigation (matches live site's header, including dropdown folders)
 export const navLinks = [
-  { label: 'About', href: '/therapists-newbury-park' },
-  {
-    label: 'Our Team',
-    href: '/our-team',
-    children: [
-      { label: 'Jennifer Anderson, LMFT', href: '/jennifer-anderson' },
-      { label: 'Candace Bletscher, AMFT', href: '/candace-bletscher' },
-      { label: 'Heather Williams-Baumgart, AMFT', href: '/heather-williams-baumgart' },
-      { label: 'Michaela Gorospe, AMFT', href: '/michaela-gorospe' },
-      { label: 'Samantha Johnson, AMFT', href: '/samantha-johnson' },
-      { label: 'Autumn Bodily, AMFT', href: '/autumn-bodily' },
-      { label: 'Andrea Watkins, APCC', href: '/andrea-watkins' },
-      { label: 'Rosa Gomez, AMFT', href: '/rosa-gomez' },
-      { label: 'Chad Flores, AMFT', href: '/chad-flores' },
-    ],
-  },
-  {
-    label: 'Specialties',
-    href: '/specialties',
-    children: [
-      { label: 'Dissociation', href: '/dissociative-identity-disorder-therapist-newbury-park' },
-      { label: 'Trauma', href: '/trauma-counseling-newbury-park' },
-      { label: 'Special Needs Parenting', href: '/counseling-special-needs-parents-newbury-park' },
-      { label: 'Couples', href: '/couples-therapy' },
-      { label: 'Children & Teens', href: '/children-and-teens' },
-      { label: 'Anxiety & Depression', href: '/anxiety-depression' },
-      { label: 'Adoption', href: '/adoption-therapy-ventura-county-ca' },
-    ],
-  },
-  {
-    label: 'Methods',
-    href: '/methods',
-    children: [
-      { label: 'EMDR', href: '/emdr-therapy-newbury-park' },
-      { label: 'Brainspotting', href: '/brainspotting' },
-      { label: 'Somatic Therapy', href: '/somatic-therapy' },
-      { label: 'Parts Work Therapy', href: '/parts-work-therapy' },
-    ],
-  },
-  { label: 'FAQs', href: '/faqs' },
+  { label: 'About', href: '#about' },
+  { label: 'Specialties', href: '#specialties' },
+  { label: 'Approach', href: '#approach' },
+  { label: 'Office', href: '#office' },
 ];
 
 export const contactInfo = {
-  addressLine1: '925 Broadbeck Dr',
-  addressLine2: 'Suites 200 and 225',
-  addressLine3: 'Newbury Park, CA 91320',
-  phone: '805.242.3120',
-  phoneHref: 'tel:8052423120',
-  email: 'info@conejovalleycounseling.com',
-  serviceAreas: 'Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, & Simi Valley',
+  addressLine1: '123th Street 45 W',
+  addressLine2: 'Santa Monica, CA 90401',
+  addressLine3: '',
+  phone: '(310) 555-0123',
+  phoneHref: 'tel:+13105550123',
+  email: 'hello@mayareynoldspsyd.com',
+  serviceAreas: 'Telehealth available throughout California',
 };
 
-// Footer "Navigate" column
 export const footerNavLinks = [
-  { label: 'Home', href: '/home' },
-  { label: 'About', href: '/therapists-newbury-park' },
-  { label: 'FAQs', href: '/faqs' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'About', href: '#about' },
+  { label: 'Specialties', href: '#specialties' },
+  { label: 'Approach', href: '#approach' },
+  { label: 'Contact', href: '#contact' },
 ];
 
-// Footer "Our Team" column
-export const footerTeamLinks = [
-  { label: 'Jennifer Anderson', href: '/jennifer-anderson' },
-  { label: 'Heather Williams-Baumgart', href: '/heather-williams-baumgart' },
-  { label: 'Autumn Bodily', href: '/autumn-bodily' },
-  { label: 'Michaela Gorospe', href: '/michaela-gorospe' },
-  { label: 'Candace Bletscher', href: '/candace-bletscher' },
-  { label: 'Samantha Johnson', href: '/samantha-johnson' },
-  { label: 'Andrea Watkins', href: '/andrea-watkins' },
-  { label: 'Rosa Gomez', href: '/rosa-gomez' },
-  { label: 'Chad Flores', href: '/chad-flores' },
-];
-
-export const footerLegalLinks = [
-  { label: 'Terms', href: '/terms' },
-  { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Disclaimer', href: '/disclaimer' },
+export const footerSpecialtyLinks = [
+  { label: 'Anxiety', href: '#specialties' },
+  { label: 'Panic', href: '#specialties' },
+  { label: 'Trauma', href: '#specialties' },
+  { label: 'Burnout', href: '#specialties' },
 ];
 
 export const gettingStartedContent = {
   paragraph:
-    "We want to make getting started simple. You're welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA—whatever works best for you.",
+    'I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for clients located in California. My office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment.',
 };
 
-// The 4 in-depth specialty cards ("Our specialties include…")
 export const specialties = [
   {
+    title: 'Anxiety',
+    desc: 'Clients frequently come to me feeling "functional" on the outside while quietly struggling with constant worry, tension in their body, difficulty sleeping, or a sense that they\'re always bracing for something to go wrong.',
+    href: '#contact',
+  },
+  {
+    title: 'Panic',
+    desc: "Panic can show up as tension in the body, racing thoughts, or a sense that something is about to go wrong—even when things are objectively okay. Therapy helps you understand both the emotional and physiological sides of what you're experiencing.",
+    href: '#contact',
+  },
+  {
     title: 'Trauma',
-    desc: "We don't always know when and how we've experienced trauma. In therapy, we'll work together to help you process your past, understand what's causing you to stay “stuck,” and regain a sense of safety, control, and hope. You don't have to carry your burdens alone.",
-    href: '/trauma-counseling-newbury-park',
+    desc: 'I work with adults who have experienced single-incident trauma as well as more complex, long-standing patterns that may stem from childhood, relationships, or chronic stress. My approach is paced carefully, with an emphasis on safety and stabilization.',
+    href: '#contact',
   },
   {
-    title: 'Dissociation',
-    desc: 'The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we\'ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.',
-    href: '/dissociative-identity-disorder-therapist-newbury-park',
-  },
-  {
-    title: 'EMDR',
-    desc: 'Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.',
-    href: '/emdr-therapy-newbury-park',
-  },
-  {
-    title: 'Special Needs Parenting',
-    desc: 'Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.',
-    href: '/counseling-special-needs-parents-newbury-park',
+    title: 'Burnout',
+    desc: 'Professional burnout, perfectionism, and high internal pressure can leave you feeling disconnected from yourself after years of pushing through stress. Therapy can become a space to slow down, reconnect, and develop more sustainable ways of living and working.',
+    href: '#contact',
   },
 ];
 
-// "Our areas of expertise" tag cloud
 export const expertiseTags = [
-  { label: 'Dissociation', href: '/dissociative-identity-disorder-therapist-newbury-park' },
-  { label: 'Trauma', href: '/trauma-counseling-newbury-park' },
-  { label: 'Family conflict', href: undefined },
-  { label: 'Special needs parenting', href: '/counseling-special-needs-parents-newbury-park' },
-  { label: 'Depression', href: '/anxiety-depression' },
-  { label: 'marriage', href: '/couples-therapy' },
-  { label: 'anxiety', href: '/anxiety-depression' },
-  { label: 'relationships', href: undefined },
-  { label: 'children', href: '/children-and-teens' },
-  { label: 'teens', href: '/children-and-teens' },
-  { label: 'intimacy & connection', href: '/couples-therapy' },
+  { label: 'Anxiety', href: undefined },
+  { label: 'Panic', href: undefined },
+  { label: 'Trauma', href: undefined },
+  { label: 'Burnout', href: undefined },
+  { label: 'Perfectionism', href: undefined },
+  { label: 'Overthinking', href: undefined },
+  { label: 'Chronic stress', href: undefined },
+  { label: 'Relationships', href: undefined },
+  { label: 'Confidence', href: undefined },
+  { label: 'Sense of safety', href: undefined },
+  { label: 'Sleep difficulties', href: undefined },
   { label: '…and more.', href: undefined },
 ];
 
 export const heroSectionContent = {
-  eyebrow: 'ONLINE & IN-PERSON COUNSELING IN NEWBURY PARK & ACROSS CA',
-  mainHeading: 'Rebuild your foundation on solid ground and finally begin to thrive.',
-  subheading: 'Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.',
+  eyebrow: 'IN-PERSON IN SANTA MONICA & TELEHEALTH ACROSS CALIFORNIA',
+  subheading:
+    "I'm a licensed clinical psychologist offering therapy for adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences.",
 };
 
 export const holdingHopeContent = {
-  heading: "You're holding onto hope that life can be better than it is right now.",
+  heading:
+    'Many of my clients look "functional" on the outside—while quietly bracing for something to go wrong.',
 };
 
 export const conejoPurposeContent = {
-  heading: 'At Conejo Valley Family Counseling we want to make that hope a reality.',
+  heading:
+    'Many of the people I work with are high-achieving, thoughtful, and self-aware—but internally feel exhausted, stuck in overthinking, or emotionally on edge.',
   description:
-    "Whether you're an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life's ups and downs.",
+    'Clients frequently come to me feeling "functional" on the outside while quietly struggling with constant worry, tension in their body, difficulty sleeping, or a sense that they\'re always bracing for something to go wrong. Others are navigating the impact of earlier life experiences that continue to affect their relationships, confidence, or sense of safety.',
   furtherDescription:
-    "First and foremost, we believe what you're going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.",
+    "I take a warm, collaborative, and grounded approach to therapy. Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. I integrate evidence-based methods such as cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques to help clients understand both the emotional and physiological sides of what they're experiencing.",
 };
 
 export const whoWeHelpContent = {
-  heading: 'Who we help',
+  heading: 'Who I help',
   adults: {
-    title: 'Adults',
+    title: 'High-Achievers & Professionals',
     href: undefined as string | undefined,
     description:
-      'Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.',
+      'Many of the people I work with are high-achieving, thoughtful, and self-aware—but internally feel exhausted, stuck in overthinking, or emotionally on edge.',
   },
   couples: {
-    title: 'Couples',
-    href: '/couples-therapy',
+    title: 'Trauma Survivors',
+    href: '#specialties',
     description:
-      "Relationships require effort, and we're here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.",
+      'I work with adults who have experienced single-incident trauma as well as more complex, long-standing patterns that may stem from childhood, relationships, or chronic stress.',
   },
   childrenTeens: {
-    title: 'Children & Teens',
-    href: '/children-and-teens',
+    title: 'Entrepreneurs & Creatives',
+    href: '#specialties',
     description:
-      'Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.',
+      'Many are entrepreneurs, creatives, or professionals who feel disconnected from themselves after years of pushing through stress. Therapy can become a space to slow down and reconnect.',
   },
 };
 
 export const worthyPlaceContent = {
-  heading: 'You deserve a place where your story is heard, valued, and understood.',
-  subheading: 'Nothing will be too heavy for us to carry together.',
+  heading: 'My goal is not just symptom relief,',
+  subheading: 'but helping clients develop insight, resilience, and a stronger relationship with themselves over time.',
 };
 
 export const makingDifferenceContent = {
-  eyebrow: 'HOW WE WORK',
-  heading: "We're here to make a difference.",
+  eyebrow: 'HOW I WORK',
+  heading: 'Trauma work is an important part of my practice.',
   mainPoint:
-    "The clients we work with are balancing so many things at once, it's often hard for them to put themselves first.",
+    'I work with adults who have experienced single-incident trauma as well as more complex, long-standing patterns that may stem from childhood, relationships, or chronic stress.',
   description:
-    'Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won\'t find anything “one-size-fits-all” here.) If you\'re ready to do the work, we\'re ready to help.',
+    'My approach is paced carefully, with an emphasis on safety, stabilization, and helping clients feel more regulated in their daily lives—not just during sessions.',
   secondDescription:
-    "Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you've learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what's hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.",
-  buttonLabel: 'Learn more about us',
-  buttonHref: '/therapists-newbury-park',
+    'In addition to trauma and anxiety, I frequently support clients dealing with professional burnout, perfectionism, and high internal pressure. Many are entrepreneurs, creatives, or professionals who feel disconnected from themselves after years of pushing through stress. Therapy can become a space to slow down, reconnect, and develop more sustainable ways of living and working.',
+  buttonLabel: 'Learn more about my approach',
+  buttonHref: '#contact',
+};
+
+export const ourOfficeContent = {
+  eyebrow: 'OUR OFFICE',
+  heading: 'A calm space for healing',
+  description:
+    "Every detail of the office is intentional—natural light, an uncluttered layout, and a quiet, private atmosphere where you can simply exhale. Clients often say the space itself helps them feel more at ease the moment they arrive.",
+  details: [
+    { label: 'Santa Monica, CA' },
+    { label: 'In-Person & Telehealth' },
+    { label: 'Private & Confidential' },
+  ],
 };
 
 export const teamContent = {
-  eyebrow: 'SCHEDULE AN APPOINTMENT',
-  heading: 'Find a therapist who is the right fit for you.',
+  eyebrow: 'SCHEDULE A CONSULTATION',
+  heading: 'A therapist who understands the realities of a fast-paced life.',
   paragraph:
-    "Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we're here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.",
-  secondParagraph: 'Click the button below to schedule an appointment.',
-  buttonLabel: 'Book now',
-  buttonHref: '/contact',
+    'I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for clients located in California. My office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment. Clients often share that the space itself helps them feel more at ease when they arrive.',
+  secondParagraph:
+    "If you're looking for a therapist who combines practical tools with depth-oriented work—and who understands the realities of living and working in a fast-paced environment—I may be a good fit.",
+  buttonLabel: 'Book a Consultation',
+  buttonHref: `mailto:${contactInfo.email}`,
 };

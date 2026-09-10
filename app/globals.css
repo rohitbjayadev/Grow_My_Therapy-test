@@ -12,16 +12,18 @@
 :root {
   --font-heading: 'Cormorant Infant', serif;
   --font-body: 'Muli', sans-serif;
-  --background: #ffffff;
-  --foreground: #1f2937;
-  --text-primary: #2b2b2b;
-  --text-secondary: #2b2b2b;
+  --background: #FAF8F3;
+  --foreground: #5F6F5E;
+  --text-primary: #5F6F5E;
+  --text-secondary: #5F6F5E;
 
-  --color-white: #ffffff;
-  --color-black: #2b2b2b;
-  --color-accent: #e3d9ca;
-  --color-light-accent: #f6f4ee;
-  --color-dark-accent: #86b3b3;
+  --color-white: #FAF8F3;
+  --color-black: #5F6F5E;
+  --color-accent: #E8DDD0;
+  --color-light-accent: #EAF0E6;
+  --color-dark-accent: #C79A7B;
+  --color-sage: #A8B5A1;
+  --color-stone: #D0D4C8;
 }
 
 .accent-script {
@@ -55,7 +57,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: 1px solid #515151;
+  border-bottom: 1px solid var(--color-dark-accent);
   transition: right 1s;
 }
 .btn-primary:hover::before {
@@ -67,14 +69,14 @@
   font-family: 'Muli', sans-serif;
   font-weight: 600;
   border-radius: 9999px;
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--color-dark-accent);
   color: var(--color-black);
   padding: 0.6em 1.75em;
   transition: background-color 0.2s, color 0.2s;
 }
 .btn-secondary:hover {
-  background-color: var(--color-black);
-  color: #fff;
+  background-color: var(--color-dark-accent);
+  color: var(--color-white);
 }
 
 @theme inline {

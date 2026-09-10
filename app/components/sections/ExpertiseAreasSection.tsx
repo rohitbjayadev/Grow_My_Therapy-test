@@ -4,11 +4,11 @@ import type { CSSProperties } from 'react';
 
 export function ExpertiseAreasSection() {
   return (
-    <section className="w-full bg-white py-12 md:py-20">
+    <section className="w-full bg-[var(--color-white)] py-12 md:py-20">
       <div className="max-w-[1500px] mx-auto px-[6vw] md:px-[4vw]">
         <div className="grid grid-cols-8 grid-rows-[repeat(27,auto)] gap-x-[11px] gap-y-3 md:grid-cols-24 md:grid-rows-[repeat(12,auto)] md:gap-y-6">
           <h3 className="[grid-area:1/1/3/9] md:[grid-area:1/2/4/8] text-3xl md:text-4xl font-bold">
-            Our areas of <em className="accent-script">expertise</em>
+            My areas of <em className="accent-script">expertise</em>
           </h3>
 
           {expertiseTags.map((tag, idx) => {

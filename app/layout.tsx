@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Counseling in Newbury Park, CA | Conejo Valley Family Counseling",
-  description: "Counseling for adults, couples, and children in Newbury & across CA. EMDR, trauma & dissociation, special needs parenting, anxiety, & more. In-person & online.",
+  title: "Therapy for Anxiety, Trauma & Burnout | Maya Reynolds, PsyD",
+  description: "Licensed clinical psychologist in Santa Monica, CA offering therapy for anxiety, panic, trauma, and burnout. In-person and telehealth across California.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
