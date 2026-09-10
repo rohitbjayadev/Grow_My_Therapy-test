@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dr. Maya Reynolds, PsyD — Therapy Website
+
+A single-page marketing site for a solo therapy practice, built with Next.js and Tailwind CSS. Dr. Maya Reynolds is a fictional Licensed Clinical Psychologist based in Santa Monica, CA, used here as a design/content exercise.
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) 16 (App Router, Turbopack)
+- [React](https://react.dev) 19
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS](https://tailwindcss.com) v4
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and start the dev server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site. The page auto-updates as you edit files.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── components/
+│   ├── Header.tsx            # Sticky nav with anchor links
+│   ├── HeroSection.tsx        # Landing hero with portrait + intro
+│   ├── Footer.tsx
+│   └── sections/               # One component per homepage section
+│       ├── HoldingHopeSection.tsx
+│       ├── WhoWeHelpSection.tsx
+│       ├── WorthyPlaceSection.tsx
+│       ├── ExpertiseAreasSection.tsx
+│       ├── MakingDifferenceSection.tsx
+│       ├── HonoringSection.tsx
+│       ├── SpecialtiesSection.tsx
+│       ├── OurOfficeSection.tsx
+│       └── TeamSection.tsx
+├── lib/
+│   └── constants.ts            # All page copy/content, single source of truth
+├── globals.css                 # Design tokens, fonts, base styles
+└── page.tsx                    # Composes sections into the homepage
+```
 
-## Learn More
+The entire site is a single scrollable page (`app/page.tsx`); navigation links scroll to in-page anchors rather than routing to separate pages.
 
-To learn more about Next.js, take a look at the following resources:
+## Content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All copy lives in [`app/lib/constants.ts`](app/lib/constants.ts) — update text there rather than inline in components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Design System
 
-## Deploy on Vercel
+Defined as CSS custom properties in [`app/globals.css`](app/globals.css):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Token | Role |
+|---|---|
+| `--color-white` | Ivory background |
+| `--color-black` | Primary text (warm charcoal) |
+| `--color-accent` | Sand |
+| `--color-light-accent` | Pale sage section background |
+| `--color-dark-accent` | Clay (links, underlines, CTAs) |
+| `--color-sage` / `--color-stone` | Secondary accents |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Fonts: Cormorant Infant (headings), Muli (body), PrintedMoments (script accent word).
+
+## Scripts
+
+```bash
+npm run dev      # Start dev server (Turbopack)
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
+
+## Deployment
+
+Deployed via [Vercel](https://vercel.com). Connect the repository and Vercel will auto-detect the Next.js configuration — no custom build settings required.
